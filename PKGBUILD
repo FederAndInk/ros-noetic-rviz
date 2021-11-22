@@ -2,7 +2,7 @@ pkgdesc="ROS - 3D visualization tool for ROS."
 url='https://wiki.ros.org/rviz'
 
 pkgname='ros-noetic-rviz'
-pkgver='1.14.10'
+pkgver='1.14.11'
 arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
 pkgrel=1
 license=('BSD, Creative Commons')
@@ -64,7 +64,7 @@ depends=(
 
 _dir="rviz-${pkgver}/"
 source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros-visualization/rviz/archive/${pkgver}.tar.gz")
-sha256sums=('37b79f66c6c9eab3fc20747e60a4124b329db3e9314c483481afe82f0fa49b4a')
+sha256sums=('3ef5d401a4ebacee9274cc25bafb267656fe2ee08d983b6d3672cceddeac0427')
 
 prepare(){
     sed -i '11s/14/17/' ./${_dir}/CMakeLists.txt
